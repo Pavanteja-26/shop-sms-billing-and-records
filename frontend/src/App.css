@@ -123,6 +123,25 @@ body {
   position: relative;
   transition: color 0.3s;
 }
+/* Special styling for Admin link */
+.admin-link {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  transition: all 0.3s;
+}
+
+.admin-link:hover {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.admin-link::after {
+  display: none; /* Remove underline effect for admin link */
+}
 
 .nav-link::after {
   content: '';
@@ -183,6 +202,37 @@ body {
 .footer-content p {
   margin: 0.5rem 0;
   opacity: 0.95;
+}
+
+/* Footer Admin Link */
+.footer-links {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-admin-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-admin-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.footer-admin-link:active {
+  transform: translateY(0);
 }
 
 /* ===================================
